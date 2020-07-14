@@ -63,7 +63,7 @@ body{
     position: fixed;
     width: 40rem;
     height: 100%;
-    background: linear-gradient(to top, rgba(34, 32, 41, .1), 
+    background: linear-gradient(to top, rgba(34, 32, 41, .9), 
     rgba(34, 32, 41, .8)), url(https://i.pinimg.com/736x/70/c1/2b/70c12b3ef79b2e65af3da251d71f3021.jpg) center no-repeat;
     background-size: cover;
     display: flex;
@@ -71,9 +71,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-
-.navHeader-heading
-{
+.navHeader-heading{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 3.5rem;
     font-weight: 300;
@@ -81,11 +79,88 @@ body{
     letter-spacing: .2rem;
     text-align: center;
 }
-
-.navSearch__input
-{
+.navSearch{
+    position: relative;
+}
+.navSearch__input{
     width: 30rem;
     padding: 1rem 2rem;
     background-color: rgba(0,0,0,0.3);
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.6rem;
+    color: #deaa86;
+    letter-spacing: .1rem;
+    outline: none;
+    border: .1rem solid #555;
+    border-radius: 10rem;
+    transition: background-color .3s;
+}
+.navSearch__input:focus{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.navSearch__button{
+    border: none;
+    background-color: transparent;
+    color: #deaa86;
+    font-size: 1.7rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+.navSearch__button:focus{
+    outline: none;
+}
+.navList{
+    list-style: none;
+    padding: 0;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.navItem{
+    position: relative;
+}
+.navItem-link{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color .5s;
+}
+.navItem-link::before{
+    content: "";
+    width: 0rem;
+    height: .1rem;
+    background-color: #deaa86;
+    position: absolute;
+    top: 1rem;
+    left: -4rem;
+    transition: width .5s cubic-bezier(1,0,0,1);
+}
+.navItem-link::after{
+    content: "";
+    width: 0rem;
+    height: .1rem;
+    background-color: #deaa86;
+    position: absolute;
+    top: 1rem;
+    right: -4rem;
+    transition: width .5s cubic-bezier(1,0,0,1);
+}
+.navItem-link:hover{
+    color: #deaa86;
+}
+.navItem-link:hover::before,
+.navItem-link:hover::after{
+    width: 3rem;
+}
+.copyright{
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
