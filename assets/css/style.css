@@ -165,14 +165,262 @@ body{
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
-
-.checkbox
-{
+.checkbox{
     display: none;
 }
-
-.checkbox:checked ~ .nav
-{
+.checkbox:checked ~ .nav{
     opacity: 0;
     margin-left: -40rem;
 }
+.header{
+    margin-left: 8rem;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0, .6), rgba(0,0,0, .5)), url(../img/hotel.jpg) center no-repeat;
+    background-size: cover;
+}
+.logoImg{
+    width: 8rem;
+}
+.brand{
+    display: flex;
+    cursor: pointer;
+}
+.hotelHeading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.7rem;
+    font-weight: 400;
+    color: #deaa86;
+    letter-spacing: .2rem;
+    animation: anim 2s;
+}
+.banner{
+    color: #ddd;
+    height: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bannerHeading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 7rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    animation: anim 2s;
+}
+.bannerParagraph{
+    font-size: 3.5rem;
+    font-weight: 300;
+    animation: anim 1.5s .5s backwards;
+}
+.bannerButton{
+    width: 21rem;
+    padding: 1.2rem 2rem;
+    font-size: 2rem;
+    counter-reset: #333;
+    letter-spacing: .1rem;
+    border: none;
+    border-radius: 10rem;
+    outline: none;
+    background: linear-gradient(to right, gold, goldenrod);
+    cursor: pointer;
+    animation: anim 1s 1s backwards;
+}
+.bannerButton:hover{
+    background: linear-gradient(to left, gold, goldenrod);
+}
+.bannerButton:active{
+    transform: translateY(.2rem);
+}
+@keyframes anim{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.aboutUs{
+    margin-left: 8rem;
+    display: flex;
+    background-color: #ddd;
+}
+.aboutUs__heading{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #555;
+}
+.aboutUs__content{
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    box-sizing: border-box;
+}
+.aboutUs__images{
+    flex: 1 1;
+}
+.smallUnderline{
+    width: 9rem;
+    height: .1rem;
+    margin: 0 auto 1rem;
+    background-color: #b85d1c;
+}
+.bigUnderline{
+    width: 20rem;
+    height: .1rem;
+    background-color: #b85d1c;
+}
+.subHeading{
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+    color: #b85d1c;
+}
+.aboutUs__paragraph{
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.aboutUs__btn{
+    width: 15rem;
+    padding: .7rem .5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #b85d1c;
+    background-color: transparent;
+    border: .1rem solid #b85d1c;
+    outline: none;
+    cursor: pointer;
+}
+.btnArrow{
+    margin-left: .5rem;
+    transition: margin-left .4s;
+}
+.aboutUs__btn:hover .btnArrow{
+    margin-left: 1.5rem;
+}
+.aboutUs__images{
+    flex: 1 1;
+    position: relative;
+}
+.image{
+    width: 32rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 3rem 6rem rgba(0,0,0, 0.4);
+    border-radius: 0.4rem;
+    border: .2rem solid #b85d1c;
+}
+.image-1{
+    transform: translate(-20%, -90%);
+}
+.image-2{
+    transform: translate(-70%, -70%);
+}
+.image-3{
+    transform: translate(-50%,-50%);
+}
+.image-4{
+    transform: translate(-30%,-30%);
+}
+.commonHeader{
+    padding: 5rem;
+    text-align: center;
+    color: #b85d1c;
+}
+.commonHeading{
+    font-size: 4rem;
+    font-weight: 300;
+    letter-spacing: .2rem;
+}
+.bigUnderline{
+    width: 20rem;
+    height: .1rem;
+    margin: auto;
+    background-color: #b85d1c;
+}
+.rooms{
+    margin-left: 8rem;
+}
+.roomCard{
+    width: 60rem;
+    margin: 5rem;
+    background-color: #15141b;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
+}
+.roomsCardsWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.roomCard__img{
+    width: 100%;
+}
+.roomCard__content{
+    color: #ddd;
+    padding: 2rem;
+}
+.roomCard__heading{
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 300;
+}
+.roomCard__paragraph{
+    font-size: 1.5rem;
+    color: #777;
+}
+.roomCard__price{
+    font-size: 5rem;
+    font-weight: 300;
+    text-align: right;
+    margin: 0;
+}
+.roomCard__btn{
+    width: 15rem;
+    padding: 1.5rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #b85d1c;
+    border-radius: 10rem;
+    background-color: transparent;
+    border: .1rem solid #b85d1c;
+    outline: none;
+    cursor: pointer;
+}
+.roomsBtnWrapper
+{
+    text-align: center;
+}
+.roomsBtn{
+    width: 20rem;
+    padding: 1.5rem 1rem;
+    margin: 4rem 0;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: #b85d1c;
+    border: .2rem solid #b85d1c;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, .2);
+    transition: all .2s;
+}
+.roomsBtn:hover{
+    color: #ddd;
+    background-color: #b85d1c;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*  */

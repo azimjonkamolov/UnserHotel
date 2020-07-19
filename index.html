@@ -1,8 +1,16 @@
+<!-- 
+    author: Azimjon Kamolov
+    contact: azimjonkamolovuz@gmail.com
+    purpose: Practice
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is Unser Hotel's website from where customers can have infromation about Unser Hotel and register a room">
+    <meta name="robots" content="index, follow">
     <title>Unser Hotel</title>
     <link rel="shortcut icon" href="assets/img/logo.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
@@ -12,6 +20,7 @@
 </head>
 <body>
     <div class="navbar">
+        
         <div class="sidebar">
             <label for="click">
                 <div class="menuIcon">
@@ -45,7 +54,7 @@
             <div class="year">
                 <p>2020</p>
             </div>
-            <input type="checkbox" class="checkbox" id="click">
+            <input type="checkbox" class="checkbox" id="click" checked="untrue">
             <nav class="nav" id="navId" >
                 <div class="navHeader">
                     <h1 class="navHeader-heading">Unser Hotel</h1>
@@ -80,8 +89,137 @@
                     <p>&copy; 2020. Unser Hotel. All right reserved</p>
                 </div>
             </nav>
-
         </div>
     </div>
+    <header class="header" >  
+        <div class="brand">
+            <div class="logoContainer">
+                <img class="logoImg" src="assets/img/logo.png" alt="Logo">
+            </div>
+            <h3 class="hotelHeading">Unser Hotel</h3>
+        </div>
+        <div class="banner">
+            <h1 class="bannerHeading">Welcome to Unser Hotel</h1>
+            <p class="bannerParagraph">Make your life luxurious</p>
+            <button class="bannerButton">Check Out</button>
+        </div>
+    </header>
+    <section class="aboutUs">
+        <div class="aboutUs__content">
+            <h1 class="aboutUs__heading">About Us</h1>
+            <div class="underLine">
+                <div class="smallUnderline"></div>
+                <div class="bigUnderline"></div>
+            </div>
+            <h3 class="subHeading" >Unser Hotel</h3>
+            <p class="aboutUs__paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsam assumenda 
+                aliquid incidunt pariatur ad eaque? Iste aspernatur, dolores expedita quisquam dolor 
+                architecto, nulla unde, quam facere illo in dignissimos.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ipsam assumenda 
+                aliquid incidunt pariatur ad eaque? Iste aspernatur, dolores expedita quisquam dolor 
+                architecto, nulla unde, quam facere illo in dignissimos.
+            </p>
+            <button class="aboutUs__btn" >
+                Read More
+                <i class="fas fa-angle-double-right btnArrow"></i>
+            </button>
+        </div>
+        <div class="aboutUs__images">
+            <img src="assets/img/image-1.jpg" alt="about us image 1" class="image image-1">
+            <img src="assets/img/image-2.jpg" alt="about us image 2" class="image image-2">
+            <img src="assets/img/image-3.jpg" alt="about us image 3" class="image image-3">
+            <img src="assets/img/image-4.jpg" alt="about us image 4" class="image image-4">
+        </div>
+    </section>
+    <section class="rooms">
+        <div class="commonHeader">
+            <h1 class="commonHeading"> Rooms In Unser Hotel</h1>
+            <div class="underLine">
+                <div class="smallUnderline"></div>
+                <div class="bigUnderline"></div>
+            </div>
+        </div>
+        <div class="roomsCardsWrapper">
+            <div class="roomCard">
+                <img src="assets/img/room-1.webp" alt="" class="roomCard__img">
+                <div class="roomCard__content">
+                    <h4 class="roomCard__heading"> Single Room </h4>
+                    <p class="roomCard__paragraph"> 
+                        This room is to serve an individual and provided with all the best services 
+                        It has been gained the undeniable reputation of a secure and helpful 
+                        platform and acquired top positions on software reviews because of high-quality 
+                        standards and a flexible approach for clients' needs. The different software 
+                        packages suit the needs of smaller and larger businesses. 
+                    </p>
+                    <p class="roomCard__price" > $ 99.00 </p>
+                    <button class="roomCard__btn">
+                        Book Now
+                        <i class="fas fa-angle-double-right btnArrow"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="roomCard">
+                <img src="assets/img/room-2.jpg" alt="" class="roomCard__img">
+                <div class="roomCard__content">
+                    <h4 class="roomCard__heading"> Double Room </h4>
+                    <p class="roomCard__paragraph"> 
+                        This room is to serve an individual and provided with all the best services 
+                        It has been gained the undeniable reputation of a secure and helpful 
+                        platform and acquired top positions on software reviews because of high-quality 
+                        standards and a flexible approach for clients' needs. The different software 
+                        packages suit the needs of smaller and larger businesses. 
+                    </p>
+                    <p class="roomCard__price" > $ 199.00 </p>
+                    <button class="roomCard__btn">
+                        Book Now
+                        <i class="fas fa-angle-double-right btnArrow"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="roomCard">
+                <img src="assets/img/room-3.jpg" alt="" class="roomCard__img">
+                <div class="roomCard__content">
+                    <h4 class="roomCard__heading"> Lux Room </h4>
+                    <p class="roomCard__paragraph"> 
+                        This room is to serve an individual and provided with all the best services 
+                        It has been gained the undeniable reputation of a secure and helpful 
+                        platform and acquired top positions on software reviews because of high-quality 
+                        standards and a flexible approach for clients' needs. The different software 
+                        packages suit the needs of smaller and larger businesses. 
+                    </p>
+                    <p class="roomCard__price" > $ 299.00 </p>
+                    <button class="roomCard__btn">
+                        Book Now
+                        <i class="fas fa-angle-double-right btnArrow"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="roomCard">
+                <img src="assets/img/room-5.jpg" alt="" class="roomCard__img">
+                <div class="roomCard__content">
+                    <h4 class="roomCard__heading"> Lux Room </h4>
+                    <p class="roomCard__paragraph"> 
+                        This room is to serve an individual and provided with all the best services 
+                        It has been gained the undeniable reputation of a secure and helpful 
+                        platform and acquired top positions on software reviews because of high-quality 
+                        standards and a flexible approach for clients' needs. The different software 
+                        packages suit the needs of smaller and larger businesses. 
+                    </p>
+                    <p class="roomCard__price" > $ 399.00 </p>
+                    <button class="roomCard__btn">
+                        Book Now
+                        <i class="fas fa-angle-double-right btnArrow"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="roomsBtnWrapper">
+            <button class="roomsBtn">
+                More
+                <i class="fas fa-angle-double-right btnArrow"></i>
+            </button>
+        </div>
+    </section>
 </body>
 </html>
