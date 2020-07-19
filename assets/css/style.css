@@ -412,8 +412,54 @@ body{
     color: #ddd;
     background-color: #b85d1c;
 }
-
-
+.customers
+{
+    margin-left: 8rem;
+    padding-bottom: 7rem;
+    background-color: #15141b;
+}
+.customersParagraph{
+    font-size: 1.8rem;
+    color: #ddd;
+    width: 50%;
+    margin: 2rem auto 8rem auto;
+}
+.customersCardWrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+.customerCard{
+    background-color: #eee;
+    width: 60rem;
+    display: flex;
+}
+.customerImageWrapper{
+    margin: auto 0;
+}
+.customerImage{
+    width: 17rem;
+    margin-left: -1.3rem;
+}
+.customerInfo{
+    padding: 0 2rem;
+}
+.customerFullname{
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+.customerParagraph__1
+{
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #b85d1c;
+}
+.customerParagraph__2
+{
+    font-size: 1.3rem;
+    padding: 2rem 0;
+    font-style: italic;
+}
 
 
 
