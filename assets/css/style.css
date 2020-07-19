@@ -2,7 +2,6 @@ html{
     /* 10/16=0.625 * 100 */
     font-size: 62.5%;
     box-sizing: border-box;
-
 }
 body{
     margin: 0;
@@ -573,7 +572,152 @@ body{
         margin-right: 3rem;
     }
 }
-
+@media(max-width: 1200px){
+    .aboutUs{
+        flex-direction: column;
+        padding-bottom: 20rem;
+    }
+    .image{
+        display: none;
+    }
+}
+@media(max-width: 900px){
+    .banner{
+        text-align: center;
+    }
+    .bannerHeading{
+        font-size: 4.7rem;
+    }
+    .bannerParagraph{
+        font-size: 2.6rem;
+    }
+    .bannerButton{
+        width: 16rem;
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 750px){
+    .customerCard{
+        flex-direction: column;
+        width: 30rem;
+    }
+    .customerImage{
+        margin-left: 0;
+        width: 30rem;
+    }
+    .footerList{
+        display: block;
+    }
+    .creatorPart{
+        flex-direction: column;
+    }
+    .copyrightText{
+        order: 1;
+    }
+    .banner{
+        height: 100%;
+        margin-top: -10rem;
+    }
+    .bannerHeading{
+        font-size: 3rem;
+    }
+}
+@media(max-width: 500px){
+    .nav{
+        width: 28rem;
+        margin-left: 16rem;
+    }
+    .navSearch__input{
+        width: 20rem;
+    }
+    .header{
+        margin-left: 6rem;
+    }
+    .rooms{
+        margin-left: 6rem;
+    }
+    .aboutUs
+    {
+        margin-left: 6rem;
+    }
+    .customers{
+        margin-left: 6rem;
+    }
+    .footer{
+        margin-left: 6rem;
+    }
+    .sidebar{
+        width: 6rem;
+    }
+    .aboutUs__heading{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .subHeading{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .aboutUs__content{
+        padding: 5rem;
+    }
+    .roomCard__price{
+        text-align: center;
+    }
+    .hotelHeading{
+        font-size: 2rem;
+        margin: auto 0;
+    }
+    .banner{
+        height: 100%;
+        margin-top: -10rem;
+    }
+    .bannerHeading{
+        font-size: 3rem;
+    }
+    .bannerParagraph{
+        font-size: 2rem;
+    }
+    .commonHeading{
+        font-size: 2rem;
+    }
+    .smallUnderline{
+        width: .5rem;
+    }
+    .bigUnderline{
+        width: 12rem;
+    }
+    .roomCard__heading{
+        font-size: 1.5rem;
+    }
+    .roomCard__price{
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    .roomCard__btn{
+        width: 12rem;
+        padding: 1rem .5rem;
+        font-size: 1rem;
+    }
+    .customerCard{
+        flex-direction: column;
+        width: 20rem;
+    }
+    .customerImage{
+        margin-left: 0;
+        width: 20rem;
+    }
+    .customersParagraph{
+        font-size: 1.4rem;
+        width: 80%;
+    }
+    .footerPart{
+        padding: 2rem;
+    }
+    .footerInput{
+        width: 12rem;
+    }
+}
 
 
 /*  */
